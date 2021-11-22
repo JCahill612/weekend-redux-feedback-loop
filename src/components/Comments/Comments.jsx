@@ -9,7 +9,7 @@ const Comments =()=>{
 const[ value, setValue] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const clickHandler = ()=>{
+    const handleClick = ()=>{
         dispatch({
             type: "ADD_FEEDBACK",
             payload : {comments : value}
@@ -30,7 +30,7 @@ return(
         />
     </div>
     <div>
-        <Button variant="contained" onClick={clickHandler}>Next</Button>
+        <Button variant="contained" onClick={handleClick}>Next</Button>
     </div>
     </>
 )

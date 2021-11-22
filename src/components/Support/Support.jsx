@@ -10,7 +10,7 @@ const[ value, setValue] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const clickHandler = ()=>{
+    const handleClick = ()=>{
         dispatch({
             type: "ADD_FEEDBACK",
             payload : {support : value}
@@ -35,7 +35,7 @@ return(
         />
     </div>
     <div>
-        <Button variant="contained" onClick={clickHandler}disabled={value===""}>Next</Button>
+        <Button variant="contained" onClick={handleClick}disabled={value===""}>Next</Button>
     </div>
     </>
 )

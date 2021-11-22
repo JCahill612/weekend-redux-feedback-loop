@@ -7,6 +7,7 @@ import Understanding from '../Understanding/Understanding';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
 import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
+import Submit from '../Submit/Submit';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/support" element={<Support />} />
           <Route path="/comments" element={<Comments />} />
           <Route path="/reviewfeedback" element={<ReviewFeedback />} />
+          <Route path="/submit" element={<Submit />} />
         </Routes>
       </BrowserRouter>
       
