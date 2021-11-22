@@ -2,13 +2,18 @@ import React,{useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import{Button} from '@mui/material';
 import TextField from '@mui/material/TextField';
+import {useDispatch} from 'react-redux';
 
 const Comments =()=>{
 
 const[ value, setValue] = useState("")
-
+    const dispatch = useDispatch()
     const navigate = useNavigate()
     const clickHandler = ()=>{
+        dispatch({
+            type: "ADD_FEEDBACK",
+            payload : {comments : value}
+        })
         navigate("/reviewfeedback");
     
     }
