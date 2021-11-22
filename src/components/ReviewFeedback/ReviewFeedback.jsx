@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import{Button} from '@mui/material';
 
@@ -15,7 +15,7 @@ const ReviewFeedback =()=>{
 return(
   
     <div>
-         <Button variant="contained" onClick={clickHandler}>Next</Button>
+         <Button variant="contained" onClick={clickHandler}>Submit</Button>
     </div>
 )
 }
